@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.hero{
+    background: linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
+    url('https://images.unsplash.com/photo-1556911220-bff31c812dba');
+
+    background-size: cover;
+    background-position:center;
+
+    color:white;
+
+    text-align:center;
+
+    padding:150px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.cta-section{
+    background:#1f2937;
+    color:white;
+    padding:80px 20px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
