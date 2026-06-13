@@ -1,51 +1,424 @@
+/* =========================
+   FARHAN CABINETS
+   PREMIUM STYLESHEET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, sans-serif;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    color:#222;
+    background:#fff;
+    line-height:1.7;
 }
 
-.hero{
-    background: linear-gradient(
-        rgba(0,0,0,.6),
-        rgba(0,0,0,.6)
-    ),
-    url('https://images.unsplash.com/photo-1556911220-bff31c812dba');
+/* =========================
+   NAVBAR
+========================= */
 
-    background-size: cover;
-    background-position:center;
-
-    color:white;
-
-    text-align:center;
-
-    padding:150px 20px;
+.custom-nav{
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    transition:.4s;
+    padding:15px 0;
 }
 
-.hero h1{
-    font-size:60px;
-    font-weight:bold;
+.navbar-brand{
+    color:#d4af37 !important;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
-.hero p{
-    font-size:22px;
-    margin:20px 0;
-}
-
-.card{
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    font-weight:500;
     transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.nav-link:hover{
+    color:#d4af37 !important;
 }
 
-.cta-section{
-    background:#1f2937;
-    color:white;
-    padding:80px 20px;
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero-slider{
+    margin-top:0;
 }
+
+.hero-slide{
+    height:100vh;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+}
+
+.slide1{
+    background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba');
+}
+
+.slide2{
+    background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858');
+}
+
+.slide3{
+    background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:64px;
+    font-weight:800;
+    max-width:900px;
+    margin-bottom:20px;
+    animation:fadeUp 1s ease;
+}
+
+.hero-content p{
+    font-size:22px;
+    max-width:700px;
+    margin-bottom:30px;
+    animation:fadeUp 1.4s ease;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-gold{
+    background:#d4af37;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn-gold:hover{
+    background:#b9911c;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section-padding{
+    padding:100px 0;
+}
+
+.section-padding h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.section-padding p{
+    color:#666;
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.service-card{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.service-card h4{
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section{
+    background:#111827;
+    color:white;
+    padding:100px 0;
+}
+
+.stats-section h2{
+    color:#d4af37;
+    font-size:56px;
+    font-weight:800;
+}
+
+.stats-section p{
+    margin-top:10px;
+    color:#ddd;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card{
+    overflow:hidden;
+    border-radius:20px;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.project-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.project-card:hover img{
+    transform:scale(1.08);
+}
+
+.project-content{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:linear-gradient(
+    transparent,
+    rgba(0,0,0,.85));
+    color:white;
+    padding:25px;
+}
+
+.project-content h5{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+.testimonial-card p{
+    font-style:italic;
+}
+
+.testimonial-card h6{
+    margin-top:15px;
+    color:#d4af37;
+    font-weight:700;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.accordion-button{
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+    background:#d4af37;
+    color:white;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    background:#f8f9fa;
+    padding:100px 0;
+}
+
+.contact-section h2{
+    font-size:42px;
+    font-weight:700;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:14px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border-color:#d4af37;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    background:black;
+    background:#0f172a;
     color:white;
-    text-align:center;
-    padding:20px;
+    padding:50px 0;
+}
+
+footer h4{
+    color:#d4af37;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.1);
+    color:white;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:46px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .section-padding{
+        padding:80px 0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-slide{
+        height:85vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .section-padding h2{
+        font-size:32px;
+    }
+
+    .stats-section h2{
+        font-size:40px;
+    }
+
+    .navbar-brand{
+        font-size:22px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .btn-gold{
+        padding:12px 24px;
+    }
+
+    .service-card{
+        padding:25px;
+    }
+
 }
