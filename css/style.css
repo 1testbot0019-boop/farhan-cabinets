@@ -422,3 +422,9 @@ footer h4{
     }
 
 }
+
+.project-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
