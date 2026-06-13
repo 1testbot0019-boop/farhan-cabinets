@@ -423,8 +423,20 @@ footer h4{
 
 }
 
+
 .project-link{
     text-decoration:none;
     color:inherit;
     display:block;
+}
+
+.project-link:hover{
+    color:inherit;
+}
+
+.project-content p{
+    margin-top:8px;
+    margin-bottom:0;
+    font-size:14px;
+    color:white;
 }
